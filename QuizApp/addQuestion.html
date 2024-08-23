@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Question</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <div class="add-container">
+        <h2>Add Question</h2>
+        
+            <div class="text-form">
+                <input type="text" id="question-text" name="question-text" required
+                    placeholder="Please Write the Question" />
+                <br />
+            </div>
+            <div class="difficult-form">
+                <select name="Difficult">
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+            <div class="chose-form">
+                <div class="choices">
+                    <input type="radio" name="answer" value="Option 1">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="answer" value="Option 2">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="answer" value="Option 3">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="answer" value="Option 4">
+                    <input type="text" placeholder="Write Option">
+                </div>
+            </div>
+
+
+
+            <div class="save-form">
+                <button class="save-form-button" onclick="window.location.href='listPage.html'">Save</button>
+            </div>
+        
+    </div>
+</body>
+
+</html>
