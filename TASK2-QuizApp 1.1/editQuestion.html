@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Question</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <div class="edit-container">
+        <h2>Edit Question</h2>
+        
+            <div class="text-form-edit">
+                <input type="text" id="question-text" name="question-text" required
+                    placeholder="Please Write the Question" />
+                <br />
+            </div>
+            <div class="difficult-form-edit">
+                <select name="Difficult">
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+            <div class="chose-form-edit">
+                <div class="choices">
+                    <input type="radio" name="answer" value="Option 1">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices-edit">
+                    <input type="radio" name="answer" value="Option 2">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices-edit">
+                    <input type="radio" name="answer" value="Option 3">
+                    <input type="text" placeholder="Write Option">
+                </div>
+
+                <div class="choices-edit">
+                    <input type="radio" name="answer" value="Option 4">
+                    <input type="text" placeholder="Write Option">
+                </div>
+            </div>
+
+
+
+            <div class="save-form-edit">
+                <button class="save-form-button-edit" onclick="window.location.href='listPage.php'">Save Changes</button>
+            </div>
+        
+    </div>
+</body>
+
+</html>

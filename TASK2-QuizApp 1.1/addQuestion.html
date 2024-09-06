@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Question</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="add-container">
+        <h2>Add Question</h2>
+       
+        <form action="saveQuestion.php" method="POST">
+            <div class="text-form">
+                <input type="text" id="question-text" name="question_text" required
+                    placeholder="Please Write the Question" />
+                <br />
+            </div>
+            <div class="difficult-form">
+                <select name="difficulty" required>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+            <div class="chose-form">
+                <div class="choices">
+                    <input type="radio" name="correct_option" value="option1" required>
+                    <input type="text" name="option1" placeholder="Write Option" required>
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="correct_option" value="option2" required>
+                    <input type="text" name="option2" placeholder="Write Option" required>
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="correct_option" value="option3" required>
+                    <input type="text" name="option3" placeholder="Write Option" required>
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="correct_option" value="option4" required>
+                    <input type="text" name="option4" placeholder="Write Option" required>
+                </div>
+            </div>
+
+            <div class="save-form">
+                <button class="save-form-button" onclick="window.location.href='listPage.php'">Save the Question</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
