@@ -1,0 +1,3 @@
+admin:admin
+dukkan1:dukkan1
+musteri1:musteri1
