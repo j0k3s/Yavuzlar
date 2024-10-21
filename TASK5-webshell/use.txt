@@ -1,0 +1,89 @@
+# j0k3s Shell Kullanım Kılavuzu
+
+## Genel Bakış
+
+j0k3s Shell, web tabanlı bir sistem yönetim aracıdır. Bu araç, uzaktan sunucu yönetimi, dosya işlemleri ve sistem komutlarının çalıştırılması gibi çeşitli işlevler sunar. Güçlü özellikleri nedeniyle dikkatli ve sorumlu bir şekilde kullanılmalıdır.
+
+## Kurulum
+
+1. `j0k3s-shell.php` dosyasını web sunucunuzun erişilebilir bir dizinine yükleyin.
+2. Dosya izinlerini kontrol edin ve gerekirse düzenleyin (örneğin: `chmod 644 j0k3s-shell.php`).
+3. Web tarayıcınızdan script'e erişin (örneğin: `http://sunucuadresiniz/j0k3s-shell.php`).
+
+## Özellikler ve Kullanım
+
+### 1. Komut Çalıştırma
+
+- Üst kısımdaki metin kutusuna bir sistem komutu girin (örneğin: `ls`, `pwd`, `whoami`).
+- "Çalıştır" butonuna tıklayın.
+- Komutun çıktısı alt kısımda görüntülenecektir.
+
+### 2. Dosya Yöneticisi
+
+- "Dosya Yöneticisi" butonuna tıklayın.
+- Mevcut dizindeki dosya ve klasörler listelenecektir.
+- Her dosya için "Oku", "Sil" ve "İndir" seçenekleri sunulur.
+
+### 3. Dosya Arama
+
+- "Dosya Ara" butonuna tıklayın.
+- Aranacak dosya adını veya bir kısmını girin.
+- "Ara" butonuna tıklayın.
+- Bulunan dosyalar tam yolları ile listelenecektir.
+
+### 4. Dosya İzinleri
+
+- "Dosya İzinleri" butonuna tıklayın.
+- Dosya veya dizinin tam yolunu girin.
+- "İzinleri Göster" butonuna tıklayın.
+- İzinler Unix tarzı notasyonla gösterilecektir (örn: rwxr-xr-x).
+
+### 5. Dosya Yükleme
+
+- "Dosya Yükle" butonuna tıklayın.
+- "Dosya Seç" butonuyla yerel bilgisayarınızdan bir dosya seçin.
+- "Yükle" butonuna tıklayın.
+- Dosya, mevcut sunucu dizinine yüklenecektir.
+
+### 6. Dosya İndirme
+
+- "Dosya İndir" butonuna tıklayın.
+- İndirilecek dosyanın sunucudaki tam yolunu girin.
+- "İndir" butonuna tıklayın.
+- Dosya, bilgisayarınıza indirilecektir.
+
+### 7. Konfigürasyon Dosyalarını Bulma
+
+- "Konf. Bul" butonuna tıklayın.
+- Sistem genelinde yaygın konfigürasyon dosyaları aranacak ve listelenecektir.
+
+### 8. Yardım
+
+- "Yardım" butonuna tıklayarak detaylı kullanım bilgilerine erişebilirsiniz.
+
+## Güvenlik Uyarıları
+
+1. Bu araç, sistem üzerinde geniş yetkilerle çalışmaktadır. Yanlış kullanım, sistem güvenliğini tehlikeye atabilir veya veri kaybına neden olabilir.
+2. Sadece yetkili olduğunuz ve güvendiğiniz sistemlerde kullanın.
+3. Güçlü bir parola koruması kullanın ve script'e erişimi sınırlandırın.
+4. Kullanım sonrası script'i sunucudan kaldırmayı veya erişimi engellemeyi unutmayın.
+5. Hassas bilgileri içeren dosyaları dikkatli yönetin ve gerektiğinde şifreleyin.
+
+## Dosya İzinleri Açıklamaları
+
+- r: Okuma izni
+- w: Yazma izni
+- x: Çalıştırma izni
+- -: İlgili izin yok
+- s: SetUID/SetGID biti
+- t: Sticky bit
+
+## Sorun Giderme
+
+- Script çalışmıyorsa, PHP sürümünüzün uyumlu olduğundan emin olun.
+- Dosya işlemleri başarısız oluyorsa, web sunucusunun ilgili dizinlerde yeterli izne sahip olduğunu kontrol edin.
+- Güvenlik duvarı veya .htaccess kuralları script'in çalışmasını engelleyebilir, gerekirse bunları kontrol edin.
+
+## Sonuç
+
+j0k3s Shell, güçlü bir sistem yönetim aracıdır. Dikkatli ve sorumlu kullanıldığında, uzaktan sunucu yönetimi için çok faydalı olabilir. Her zaman güvenlik en öncelikli konunuz olmalıdır.
