@@ -1,0 +1,5 @@
+Username: "admin", Password: "admin123"
+Username: "customer", Password: "cust123"
+
+Çalıştırmak için dosyanın bulunduğu klasörde terminalde aşağıdaki komutu çalıştırın.   
+go run main.go user.go admin.go customer.go log.go
