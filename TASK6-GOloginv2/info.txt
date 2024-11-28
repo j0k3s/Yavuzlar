@@ -1,0 +1,7 @@
+Önce terminalden dosyanın olduğu dizine gidiyoruz. 
+Ardından aşağıdaki komutu çalıştırıyoruz.
+go run main.go user.go log.go
+default giriş bilgileri.
+admin:admin123  
+user1
+pass123
